@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BintangController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bintang', function(){
-    return "aku akses aplikasi dengan url " . request()->url();
-});
+Route::get('/bintang', [BintangController::class, 'bintang']);
 
 //sekarang tugasnya adalah membuat menampilkan halaman dengan nama kalian lewat controller -> ke view
