@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/bintang', function(){
     return "aku akses aplikasi dengan url " . request()->url();
 });
+
+//sekarang tugasnya adalah membuat menampilkan halaman dengan nama kalian lewat controller -> ke view 
