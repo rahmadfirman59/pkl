@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class BintangController extends Controller
+{
+    public function bintang(){
+        return view('bintang');
+    }
+}
