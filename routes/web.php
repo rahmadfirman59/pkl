@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/bintang', function(){
-    return "aku akses aplikasi dengan url " . request()->url();
-});
+Route::get('/ino', [InoController::class, 'ino']);
 
 //sekarang tugasnya adalah membuat menampilkan halaman dengan nama kalian lewat controller -> ke view
