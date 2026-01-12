@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/bintang', function(){
+    return "aku akses aplikasi dengan url " . request()->url();
+});
+
+//sekarang tugasnya adalah membuat menampilkan halaman dengan nama kalian lewat controller -> ke view
