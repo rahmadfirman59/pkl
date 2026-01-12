@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/bintang', function(){
+    return "aku akses aplikasi dengan url " . request()->url();
+});
